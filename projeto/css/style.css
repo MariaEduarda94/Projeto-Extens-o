@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+.rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.rodape-texto{
+    color: rgb(17, 17, 17);
+}
+.login{
+    display: flex;
+    flex-direction: column;
+}
+.login-caixa{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    margin-top: 150px;
+    margin-left: 530px;
+    margin-right: 530px;
+    padding: 30px;
+    
+}
+.login-input{
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+.rec-senha{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    margin-top: 150px;
+    margin-left: 530px;
+    margin-right: 530px;
+    padding: 30px;
+}
+.sobre-caixa{
+    display: flex;
+    background-color: rgb(204, 204, 204);
+    margin-top: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: auto;
+}
