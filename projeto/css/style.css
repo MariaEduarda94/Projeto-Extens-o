@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(243, 243, 243);
 }
 .rodape{
     display: flex;
@@ -43,9 +43,14 @@ body{
 }
 .sobre-caixa{
     display: flex;
+    text-align: center;
     background-color: rgb(204, 204, 204);
-    margin-top: 200px;
     margin-left: 400px;
     margin-right: 400px;
     margin-bottom: auto;
+    padding-right: 25px;
+    padding-left: 25px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
 }
