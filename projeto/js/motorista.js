@@ -7,3 +7,4 @@ class Motorista{
         this.dataNascimento = dataNascimento;
     }
 }
+export default Motorista;

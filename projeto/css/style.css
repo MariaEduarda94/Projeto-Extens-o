@@ -27,12 +27,7 @@ body{
 .rodape-texto{
     color: rgb(17, 17, 17);
 }
-.login{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto auto;
-}
+
 .login-caixa{
     display: flex;
     flex-direction: column;
@@ -72,28 +67,6 @@ body{
     margin: 0px 0px;
 
 }
-
-.motoristas-caixa{
-    display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-    margin-top: 50px;
-    background-color: rgb(230, 230, 230);
-    padding: 25px;
-    width: 50%;
-    border-radius: 5px;
-}
-.cad-motorista-caixa{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-left: 100px;
-    padding: 30px;
-    
-}
-
 .sobre-caixa{
     display: flex;
     text-align: center;
