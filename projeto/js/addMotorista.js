@@ -1,7 +1,7 @@
 import Motorista from "./motorista";
 
 function addMotorista(event){
-    event.preventDefault(); //previne o envio do formulario para evitar o refresh da pagina 
+    event.preventDefault();//previne o envio do formulario para evitar o refresh da pagina 
     const motorista = new Motorista(
         document.getElementById("nome-motorista").value,
         document.getElementById("cnh-motorista").value,
