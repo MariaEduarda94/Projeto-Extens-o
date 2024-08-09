@@ -16,7 +16,7 @@
 <body>
 
     <div >
-        <ul class="nav justify-content-center" style="background-color:rgb(204, 204, 204);">
+        <ul class="nav justify-content-center" style="background-color:rgb(230,230,230);">
             <li class="nav-item">
                 <a class="nav-link" href="home.html" style="color:rgb(12, 12, 12)">Home</a>
               </li>
@@ -31,20 +31,48 @@
             </li>
     </div>
 
-    <div class="motoristas-caixa">
+    <div class="home">
+      <div class="login">
 
-      <div>
-        <h3>Motoristas</h3>
-        <input type="submit" name="cad-motorista" id="cad-motorista" value="Cadastrar Motorista" class="button"
-        onclick="abrirCadastrarMotorista()">
-      </div>
+        <form action="" method="post" class="cad-motorista-caixa" style="margin-top: 50px;">
+            
+            <div style="text-align: center;">
+                <h3>Cadastrar Motorista</h3>
+            </div>
+            <label for="nome-usuario">Nome</label>
+            <input type="text" id="name-driver" class="login-input" required>
 
-      <div style="margin-left: 25px;">
-        <ul id="listaMotoristas"></ul>
-        lista
-      </div>
+            <label for="cnh">CNH</label>
+            <input type="text" id="cnh-driver" class="login-input" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="phone-driver" class="login-input" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep-driver" class="login-input" required>
+
+            <label for="nascimento-usuario">Data de nascimento</label>
+            <input type="date" id="birth-driver" class="login-input" required>
+
+            <input type="submit" onclick="addMotorista();" value="Enviar" class="login-input" style="background-color: rgb(240, 240, 255);">
+
+        </form>
 
     </div>
+
+      <div class="motoristas-caixa">
+
+        <div>
+          <h3>Motoristas</h3>
+        </div>
+
+        <div style="margin-left: 25px;">
+          <ul id="minhaLista"></ul>
+        </div>
+
+      </div>
+  </div>
+
 
 </body>
 </html>
