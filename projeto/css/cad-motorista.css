@@ -1,7 +1,7 @@
 .painel-motorista{
     display: flex;
     margin-top: 50px;
-    height: 400px;
+    height: 450px;
 }
 .cad-motorista-caixa{
     display: flex;
@@ -10,7 +10,7 @@
     border-radius: 5px;
     margin-left: 25px;
     width: 300px;
-    height: 400px;
+    height: 450px;
     padding: 20px;
     box-sizing: border-box;
 }
