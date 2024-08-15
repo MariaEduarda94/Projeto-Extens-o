@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 50px;
     height: 450px;
+    padding: 0;
 }
 .cad-motorista-caixa{
     display: flex;
@@ -16,10 +17,15 @@
 }
 .motoristas-caixa{
     display: flex;
-    flex-direction: row;
-    margin-left: 25px;
-    width: 250px;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 300px;
     background-color: rgb(230, 230, 230);
     padding: 20px;
     border-radius: 5px;
+}
+ul{
+    list-style-type: none; 
+    margin: 0;
+    padding: 0 !important;
 }

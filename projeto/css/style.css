@@ -1,24 +1,27 @@
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 900px) {
     .rodape{
         display: block;
-        margin: 0px 0px;
+        margin: 0px 0px !important;
+        align-items: center;
     }
     .container{
         display: block;
+        margin-left: 0;
+        padding: 0%;
+        align-items: center;
+        width: 800px;
     }
     .login-caixa{
         display: block;
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 0px !important;
+        margin-right: 0px;
+      
     }
+
 }
 body{
     margin: 0px 0px;
 }
-.container{
-    display: block;
-}
-
 .rodape{
     display: flex;
     flex-direction: row;
@@ -28,12 +31,20 @@ body{
     color: rgb(17, 17, 17);
 }
 
+.container{
+    display: flex;
+    align-items: center;
+}
+
 .login-caixa{
     display: flex;
     flex-direction: column;
+    width: 100%;
     background-color: rgb(230, 230, 230);
     border-radius: 5px;
-    margin: 50px 300px;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
     padding: 30px;
     
 }
@@ -65,11 +76,6 @@ body{
     padding: 30px;
 }
 
-.home{
-    display: flex;
-    margin: 0px 0px;
-
-}
 .sobre-caixa{
     display: flex;
     text-align: center;
