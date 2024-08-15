@@ -1,4 +1,4 @@
-import Motorista from "./motorista";
+import Motorista from "./motorista.js";
 
 function addMotorista(event){
     event.preventDefault();//previne o envio do formulario para evitar o refresh da pagina 
@@ -11,13 +11,13 @@ function addMotorista(event){
     )
 
     //exibindo o nome do motorista cadastrado na lista
+    // Exibindo o nome do motorista cadastrado na lista
     const listaMotoristas = document.getElementById('lista-motoristas');
     const item = document.createElement('li');
     item.textContent = motorista.nome;
     listaMotoristas.appendChild(item);
 
-    //limpando o formulario
+    // Limpa o formulário após o cadastro
     document.getElementById('form-motorista').reset();
-    
 }
 document.getElementById('form-motorista').addEventListener('submit', addMotorista);
