@@ -18,5 +18,6 @@ function addMotorista(event){
 
     //limpando o formulario
     document.getElementById('form-motorista').reset();
+    
 }
 document.getElementById('form-motorista').addEventListener('submit', addMotorista);
