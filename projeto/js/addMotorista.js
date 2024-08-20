@@ -1,5 +1,10 @@
 import Motorista from "./motorista.js";
 
+function abrirModal(){
+    const modal = document.getElementById('janela-modal');
+    modal.classList.add('abrir');
+}
+
 function addMotorista(event){
     event.preventDefault();//previne o envio do formulario para evitar o refresh da pagina 
     const motorista = new Motorista(

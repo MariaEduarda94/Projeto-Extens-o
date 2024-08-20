@@ -8,10 +8,11 @@
     top: 0;
     left: 0;
     background-color: #00000067;
-    display: flex;
+    display: none;
     justify-content: center;
     z-index: -1;
 }
+
 .modal-form{
     display: flex;
     flex-direction: column;
@@ -35,6 +36,7 @@
     border-radius: 50%;
     font-size: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 .motoristas-caixa{
@@ -50,4 +52,7 @@ ul{
     list-style-type: none; 
     margin: 0;
     padding: 0 !important;
+}
+.janela-modal.abrir{
+    display: flex;
 }
