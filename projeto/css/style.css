@@ -1,26 +1,5 @@
-@media screen and (max-width: 900px) {
-    .rodape{
-        display: block;
-        margin: 0px 0px !important;
-        align-items: center;
-    }
-    .container{
-        display: block;
-        margin-left: 0;
-        padding: 0%;
-        align-items: center;
-        width: 800px;
-    }
-    .login-caixa{
-        display: block;
-        margin-left: 0px !important;
-        margin-right: 0px;
-      
-    }
-
-}
 body{
-    margin: 0px 0px;
+    background-color: rgb(241, 241, 241);
 }
 .rodape{
     display: flex;
@@ -30,62 +9,35 @@ body{
 .rodape-texto{
     color: rgb(17, 17, 17);
 }
-
-.container{
+.login{
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
-
 .login-caixa{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    margin-top: 150px;
+    margin-left: 530px;
+    margin-right: 530px;
     padding: 30px;
     
 }
-.container-input{
-    padding: 3px;
-    margin: 4px 0;
-    border: none;
-    border-radius: 2px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.button{
+.login-input{
     padding: 5px;
     margin: 5px 0;
     border: none;
-    border-radius: 5px;
-    background-color: rgb(179, 179, 196);
+    border-radius: 10px;
 }
 
 .rec-senha{
     display: flex;
     flex-direction: column;
-    background-color: rgb(230, 230, 230);
-    border-radius: 5px;
-    margin-top: 50px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 15px;
+    margin-top: 150px;
     margin-left: 530px;
     margin-right: 530px;
     padding: 30px;
-}
-
-.sobre-caixa{
-    display: flex;
-    text-align: center;
-    background-color: rgb(230, 230, 230);
-    margin-left: 400px;
-    margin-right: 400px;
-    margin-bottom: auto;
-    padding-right: 25px;
-    padding-left: 25px ;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 5px;
 }
