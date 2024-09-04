@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar-Senha</title>
+    <title>frota-carros-login</title>
     <link rel="stylesheet" href="css\style.css">
     <script src="js\abrirPagina.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+
     <div >
         <ul class="nav justify-content-center" style="background-color:rgb(230,230,230);">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html" style="color:rgb(12, 12, 12)">Home</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html" style="color:rgb(12, 12, 12)">Login</a>
             </li>
@@ -22,24 +26,30 @@
             </li>
     </div>
 
-    <div>
-        <form action="" method="post" class="rec-senha">
+
+    <div class="login">
+
+        <form action="" method="post" class="login-caixa" style="margin-top: 50px;">
+            
             <div style="text-align: center;">
-                <h4>Recuperar Senha</h4>
+                <h3>Cadastrar Veículo</h3>
             </div>
+            <label for="nome-usuario">Nome</label>
+            <input type="text" id="name-vehicle" class="container-input" required>
 
-            <label for="nova-senha">Informe a nova senha:</label>
-            <input type="password" name="" id="new-password" class="container-input" required >
+            <label for="montadora">Montadora</label>
+            <input type="text" id="montadora-vehicle" class="container-input" required>
 
-            <label for="nova-senha">Reescreva a nova senha:</label>
-            <input type="password" name="" id="new-password" class="container-input" required >
+            <label for="placa">Placa</label>
+            <input type="text" id="placa-vehicle" class="container-input" required>
 
-            <input type="submit" name="enviar" id="new-password-submit" 
-            class="button" onclick="abrirIndex()">
+            <label for="ano-fabricacao">Ano fabricação</label>
+            <input type="date" id="yaer-vehicle" class="container-input" required>
 
-            <a href="l" style="color: black; text-align: right;font-size: 80%;">não recebi o código!</a>
+            <input type="submit" onclick="abrirHome()" value="Enviar" class="container-input" style="background-color: rgb(240, 240, 255);">
 
         </form>
+
     </div>
 </body>
 </html>
