@@ -34,24 +34,25 @@ body{
 .container{
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .login-caixa{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    background-color: rgb(230, 230, 230);
+    width: 300px;
+    border: 2px solid rgb(145, 145, 179);
     border-radius: 5px;
     margin-top: 50px;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 30px;
     
 }
 .container-input{
     padding: 3px;
     margin: 4px 0;
-    border: none;
+    border: 1px solid rgb(145, 145, 179);
     border-radius: 2px;
     width: 100%;
     box-sizing: border-box;
@@ -62,7 +63,8 @@ body{
     margin: 5px 0;
     border: none;
     border-radius: 5px;
-    background-color: rgb(179, 179, 196);
+    color: white;
+    background-color: rgb(145, 145, 179);
 }
 
 .rec-senha{
