@@ -1,26 +1,23 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 940px) {
     .rodape{
         display: block;
         margin: 0px 0px !important;
         align-items: center;
     }
     .container{
-        display: block;
-        margin-left: 0;
-        padding: 0%;
-        align-items: center;
-        width: 800px;
+        width: 100%;
+        margin: 0;
     }
     .login-caixa{
         display: block;
-        margin-left: 0px !important;
-        margin-right: 0px;
-      
+        width: 100%;
     }
 
 }
 body{
-    margin: 0px 0px;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 .rodape{
     display: flex;
@@ -32,9 +29,8 @@ body{
 }
 
 .container{
-    display: flex;
-    align-items: center;
-    margin: auto;
+    display: block;
+    margin: 0;
 }
 
 .login-caixa{
@@ -44,6 +40,7 @@ body{
     border: 2px solid rgb(145, 145, 179);
     border-radius: 5px;
     margin-top: 50px;
+    margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
