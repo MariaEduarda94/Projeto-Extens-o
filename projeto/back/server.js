@@ -1,16 +1,18 @@
-const http = require('http');
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = 3000;
 
-// Define a porta do servidor
-const PORT = 3000;
+// Serve arquivos estáticos da pasta 'views'
+app.use(express.static(path.join(__dirname, 'views')));
 
-// Cria o servidor
-const server = http.createServer((req, res) => {
-  res.statusCode = 200; 
-  res.setHeader('Content-Type', 'text/plain'); 
-  res.end('ok\n');
+// Rota para a página de login
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'login.html'));
 });
 
 // Inicia o servidor
-server.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}/`);
+app.listen(port, () => {
+    console.log(`Servidor rodando em http://localhost:${port}`);
 });
+
