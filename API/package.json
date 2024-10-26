@@ -12,7 +12,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.1",
+    "global": "^4.4.0",
     "mysql2": "^3.11.3",
+    "npx": "^10.2.2",
     "sequelize": "^6.37.4"
   }
 }
