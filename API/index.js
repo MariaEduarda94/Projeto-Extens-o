@@ -6,6 +6,7 @@ const port = 3000;
 
 const sequelize = require('./config/database');
 const userRouter = require('./routes/userRoutes');
+const driverRouter = require('./routes/driverRoutes');
 
 app.use(cors());
 app.use(bodyParser.urlencoded());
@@ -13,6 +14,7 @@ app.use(bodyParser.json());
 
 app.use(express.json());
 app.use('/api', userRouter);
+app.use('/api', driverRouter);
 
 sequelize.sync()
 .then(() => console.log('Database criado'))

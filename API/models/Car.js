@@ -1,16 +1,12 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-const User = sequelize.define('User', {
+const car = sequelize.define('Car', {
   name: {
       type: DataTypes.STRING,
       allowNull: false
   },
-  email: {
-      type: DataTypes.STRING,
-      unique: true,
-      allowNull: false
-  },
+  
   cpf:{
     type: DataTypes.STRING
   },
