@@ -5,9 +5,10 @@ const app = express();
 const port = 3000;
 
 const sequelize = require('./config/database');
-const userRouter = require('./routes/userRoutes');
+const addressRouter = require('./routes/addressRoutes');
 const clientRouter = require('./routes/clientRoutes');
 const driverRouter = require('./routes/driverRoutes');
+const userRouter = require('./routes/userRoutes');
 const vehicleRouter = require('./routes/vehicleRoutes');
 
 app.use(cors());
@@ -16,9 +17,10 @@ app.use(bodyParser.json());
 
 app.use(express.json());
 app.use('/api', [
-    userRouter,
+    addressRouter,
     clientRouter,
     driverRouter,
+    userRouter,
     vehicleRouter
 ]);
 

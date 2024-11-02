@@ -29,4 +29,10 @@ Client.associate = (models) => {
   })
 }
 
+Client.associate = (models)=> {
+  Client.belongsTo(models.Address,{
+      foreignKey: 'addressId'
+  });
+}
+
 module.exports = Client;

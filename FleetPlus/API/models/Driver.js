@@ -36,4 +36,9 @@ Driver.associate = (models) => {
     foreignKey: 'driverId'
   })
 }
+Driver.associate = (models)=> {
+  Driver.belongsTo(models.Address,{
+      foreignKey: 'addressId'
+  });
+}
 module.exports = Driver;

@@ -2,6 +2,11 @@ const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const User = sequelize.define('User', {
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true
+  },
   name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -17,30 +22,17 @@ const User = sequelize.define('User', {
   phone:{
     type: DataTypes.STRING
   },
-  cep:{
-    type: DataTypes.STRING
-  },
-  street:{
-    type: DataTypes.STRING
-  },
-  number:{
-    type: DataTypes.STRING
-  },
-  neighborhood:{
-    type: DataTypes.STRING
-  },
-  city:{
-    type: DataTypes.STRING
-  },
-  uf:{
-    type: DataTypes.STRING
-  }
 });
 
 User.associate = (models) => {
   User.hasMany(models.Fueling, {
     foreignKey: 'userId'
   })
+}
+User.associate = (models)=> {
+  User.belongsTo(models.Address,{
+      foreignKey: 'addressId'
+  });
 }
 
 module.exports = User;
