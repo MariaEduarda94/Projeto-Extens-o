@@ -1,12 +1,17 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
-const Driver = sequelize.define('Driver', {
+const User = sequelize.define('User', {
   name: {
       type: DataTypes.STRING,
       allowNull: false
   },
-  cnh:{
+  email: {
+      type: DataTypes.STRING,
+      unique: true,
+      allowNull: false
+  },
+  cpf:{
     type: DataTypes.STRING
   },
   phone:{
@@ -32,4 +37,10 @@ const Driver = sequelize.define('Driver', {
   }
 });
 
-module.exports = Driver;
+User.associate = (models) => {
+  User.hasMany(models.Fueling, {
+    foreignKey: 'userId'
+  })
+}
+
+module.exports = User;

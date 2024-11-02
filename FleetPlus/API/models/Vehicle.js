@@ -20,4 +20,10 @@ const Vehicle = sequelize.define('Vehicle', {
   },
 });
 
+Vehicle.associate = (models) => {
+  Vehicle.hasMany(models.Fueling, {
+    foreignKey: 'vehicleId'
+  })
+}
+
 module.exports = Vehicle;

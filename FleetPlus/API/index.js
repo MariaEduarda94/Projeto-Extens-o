@@ -6,6 +6,7 @@ const port = 3000;
 
 const sequelize = require('./config/database');
 const userRouter = require('./routes/userRoutes');
+const clientRouter = require('./routes/clientRoutes');
 const driverRouter = require('./routes/driverRoutes');
 const vehicleRouter = require('./routes/vehicleRoutes');
 
@@ -14,9 +15,13 @@ app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 
 app.use(express.json());
-app.use('/api', userRouter);
-app.use('/api', driverRouter);
-app.use('/api', vehicleRouter);
+app.use('/api', [
+    userRouter,
+    clientRouter,
+    driverRouter,
+    vehicleRouter
+]);
+
 
 sequelize.sync()
 .then(() => console.log('Database criado'))
